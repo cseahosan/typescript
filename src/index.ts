@@ -1,8 +1,6 @@
-let myFunc: Function; // function with first letter capital
+type stringOrNum = string | number;
+type userType = {name: string; age: number};
 
-// myFunc = 'a'; // error
-myFunc = (a: string, b: string = 'console', c?:string) : void => { // c is optional string, void is return type
-    console.log(`Hello  ${a} from function ${b}`);
+const userDetails = (id: stringOrNum, user: userType) => {
+    console.log(`User id is ${id}, name is ${user.name} and age is ${user.age}`);
 }
-
-myFunc('Ahosan');

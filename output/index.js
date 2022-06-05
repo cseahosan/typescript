@@ -1,7 +1,4 @@
 "use strict";
-let myFunc; // function with first letter capital
-// myFunc = 'a'; // error
-myFunc = (a, b = 'console', c) => {
-    console.log(`Hello  ${a} from function ${b}`);
+const userDetails = (id, user) => {
+    console.log(`User id is ${id}, name is ${user.name} and age is ${user.age}`);
 };
-myFunc('Ahosan');
