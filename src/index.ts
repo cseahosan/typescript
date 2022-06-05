@@ -1,8 +1,8 @@
-let a: any; // by default any
-let b: any[] = []; // any type of array
+let myFunc: Function; // function with first letter capital
 
-// object
-let obj: {
-    name: any,
-    age: any
+// myFunc = 'a'; // error
+myFunc = (a: string, b: string = 'console', c?:string) : void => { // c is optional string, void is return type
+    console.log(`Hello  ${a} from function ${b}`);
 }
+
+myFunc('Ahosan');

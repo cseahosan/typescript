@@ -1,5 +1,7 @@
 "use strict";
-let a; // by default any
-let b = []; // any type of array
-// object
-let obj;
+let myFunc; // function with first letter capital
+// myFunc = 'a'; // error
+myFunc = (a, b = 'console', c) => {
+    console.log(`Hello  ${a} from function ${b}`);
+};
+myFunc('Ahosan');
