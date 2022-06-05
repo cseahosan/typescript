@@ -1,6 +1,1 @@
-type stringOrNum = string | number;
-type userType = {name: string; age: number};
-
-const userDetails = (id: stringOrNum, user: userType) => {
-    console.log(`User id is ${id}, name is ${user.name} and age is ${user.age}`);
-}
+let myFunc: (x: string, y:string) => void;//giving function signature. syntax like arrow function but not arrow function

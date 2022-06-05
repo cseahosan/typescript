@@ -1,4 +1,2 @@
 "use strict";
-const userDetails = (id, user) => {
-    console.log(`User id is ${id}, name is ${user.name} and age is ${user.age}`);
-};
+let myFunc; //giving function signature. syntax like arrow function but not arrow function
