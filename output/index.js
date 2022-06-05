@@ -1,14 +1,3 @@
-"use strict";
-class Player {
-    constructor(n, a, c) {
-        this.name = n;
-        this.age = a;
-        this.country = c;
-    }
-    play() {
-        console.log(`${this.name} from ${this.country} is playing.`);
-    }
-}
+import { Player } from './classes/Player.js';
 const mashrafi = new Player('Mashrafi', 40, 'Bangladesh');
-// console.log(mashrafi.name) //error because private
-// mashrafi.country = 'India'; // error because readlnly
+console.log(mashrafi.age);
