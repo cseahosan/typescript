@@ -1,7 +1,7 @@
 class Player {
-    name: string;
-    age: number;
-    country: string;
+    private name: string;
+    public age: number;  // access modifier default public
+    readonly country: string;
 
     constructor(n: string, a: number, c: string){
         this.name = n;
@@ -16,6 +16,5 @@ class Player {
 
 const mashrafi = new Player('Mashrafi', 40, 'Bangladesh');
 
-const players: Player[] = []; // players array must be an object of Player ckass
-
-players.push(mashrafi); // example
+// console.log(mashrafi.name) //error because private
+// mashrafi.country = 'India'; // error because readlnly

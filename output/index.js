@@ -10,5 +10,5 @@ class Player {
     }
 }
 const mashrafi = new Player('Mashrafi', 40, 'Bangladesh');
-const players = []; // players array must be an object of Player ckass
-players.push(mashrafi); // example
+// console.log(mashrafi.name) //error because private
+// mashrafi.country = 'India'; // error because readlnly
